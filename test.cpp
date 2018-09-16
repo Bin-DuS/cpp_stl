@@ -9,6 +9,8 @@ int main(){
 	//speak.sayHello("world");
 	Test_vector test_vector;
 	//test_vector.Test_vector_constructors();
-	test_vector.Test_vector_assign();
+	//test_vector.Test_vector_assign();
+	test_vector.Test_vector_at();
+	cout<<"test end"<<endl;
 	return 0;
 }

@@ -1,6 +1,25 @@
 #include "test_vector.h"
 using namespace std;
 /*
+ * at的使用
+ * at 定位到指定的下标元素，和v[i]类似
+ */
+void Test_vector::Test_vector_at(){
+	cout << "Test_vector_at"<<endl;
+	vector<int> v(3,0);//3个0
+	v[0] = 100;// v[0]赋值为100
+	v.at(1) = 200;//v[1]赋值为200
+	vector<int>::iterator iIt = v.begin();
+	while(iIt != v.end())
+		cout <<*iIt++<<" ";
+	cout << endl;
+	for(int i = 0;i<3;i++){
+		cout << v[i] << " ";
+	}
+	cout<<endl;
+	return;
+}
+/*
  * assign的使用
  */
 void Test_vector::Test_vector_assign(){

@@ -9,5 +9,6 @@ class Test_vector{
 	public:
 		void Test_vector_constructors();
 		void Test_vector_assign();
+		void Test_vector_at();
 };
 #endif
