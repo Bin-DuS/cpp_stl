@@ -4,8 +4,10 @@
 #include <vector>
 #include <string>
 #include <algorithm>
-class Test_stl{
+#include <iterator>
+class Test_vector{
 	public:
 		void Test_vector_constructors();
+		void Test_vector_assign();
 };
 #endif
