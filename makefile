@@ -1,9 +1,15 @@
+#不能使用gcc
+SRC=src
+INC=inc
 BIN=cpp_stl
-obj=test.o
+obj=test.o speak.o
+COMFLAGS= -lstdc++
+CFLAGS = -I $(INC)/
 BIN:$(obj)
-	#不能使用gcc
-	g++ -o $(BIN) $(obj)
+	g++ -o $(BIN) $(obj) 
 test.o:
-	g++ -c test.cpp
+	g++ -c test.cpp $(CFLAGS)
+speak.o:
+	g++ -c $(SRC)/speak.cpp $(CFLAGS)
 clean:
-	rm -rf cpp_stl test.o
+	rm -rf cpp_stl *.o
