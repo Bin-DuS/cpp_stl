@@ -2,6 +2,22 @@
 //#include <numeric>
 using namespace std;
 /*
+ * end的使用
+ */
+void Test_vector::Test_vector_end(){
+	cout << "Test_vector_end"<<endl;
+	vector<int> v;
+	cout << "Vector is ";
+	v.empty() ? cout << "":cout << "not ";
+	cout << "empty" << endl;
+	v.push_back(100);
+	cout << "After push_back:" << endl;
+	cout << "Vector is ";
+	v.empty() ? cout << "":cout << "not ";
+	cout << "empty" << endl;
+	return;
+}
+/*
  * clear的使用
  */
 void Test_vector::Test_vector_clear(){
