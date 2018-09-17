@@ -1,7 +1,32 @@
 #include "test_stack_queue.h"
 using namespace std;
 /*
- * stack的使用
+ * queue的使用,队列
+ */
+void Test_stack_queue::Test_queue(){
+	cout << "Test_queue"<<endl;
+	string s1("C++");
+	string s2("is");
+	string s3("powerfull");
+	string s4("language");
+	queue<string> que;
+	que.push(s1);
+	que.push(s2);
+	que.push(s3);
+	que.push(s4);
+	cout << "size of queue 'que' = "<< que.size() << endl;
+	string temp = que.back();
+	cout << temp << endl;
+	while(!que.empty()){
+		temp = que.front();
+		cout << temp << " ";
+		que.pop();
+	}
+	cout << endl;
+	return;
+}
+/*
+ * stack的使用,栈
  */
 void Test_stack_queue::Test_stack(){
 	cout << "Test_stack"<<endl;
