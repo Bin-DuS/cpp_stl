@@ -2,6 +2,54 @@
 //#include <numeric>
 using namespace std;
 /*
+ * max_size的使用,最大可以创建的个数
+ */
+void Test_vector::Test_vector_max_size(){
+	cout << "Test_vector_max_size"<<endl;
+	vector<int> v(10);
+	cout << "Size of v= " << v.size() << endl;
+	cout << "Max_size of v = " << v.max_size() << endl;
+	return;
+}
+/*
+ * insert的使用
+ */
+void Test_vector::Test_vector_insert(){
+	cout << "Test_vector_insert"<<endl;
+	int ary[5];
+	fill(ary,ary+5,1);
+	vector<int> v;
+	vector<int>::iterator It;
+	Print<int> print;
+	copy(ary,ary+5,back_inserter(v));
+	cout << "vector v: ";
+	cout << endl;
+	for_each(v.begin(),v.end(),print);
+	cout << endl;
+	It = v.begin();
+	// insert value "5" at the position "It"
+	cout << "v.insert(It,5): ";
+	cout << endl;
+	v.insert(It,5);
+	for_each(v.begin(),v.end(),print);
+	cout << endl;
+	// insert range ary+2 -ary+5 at the position "It"
+	It = v.begin()+5;
+	cout << "v.insert(It,ary+2,ary+5 : ";
+	cout << endl;
+	v.insert(It,ary+2,ary+5);
+	for_each(v.begin(),v.end(),print);
+	cout << endl;
+	// insert 2 value of "20" at the position "It"
+	It = v.end() - 2;
+	cout << "v.insert(It,2,20): ";
+	cout << endl;
+	v.insert(It,2,20);
+	for_each(v.begin(),v.end(),print);
+	cout << endl;
+	return;
+}
+/*
  * front的使用
  */
 void Test_vector::Test_vector_front(){

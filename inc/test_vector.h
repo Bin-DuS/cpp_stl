@@ -19,6 +19,8 @@ class Test_vector{
 		void Test_vector_end();
 		void Test_vector_erase();
 		void Test_vector_front();
+		void Test_vector_insert();
+		void Test_vector_max_size();
 };
 template <class T>
 class Print{
