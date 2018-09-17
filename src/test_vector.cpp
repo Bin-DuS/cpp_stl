@@ -1,5 +1,20 @@
 #include "test_vector.h"
+//#include <numeric>
 using namespace std;
+void Test_vector::Test_vector_begin(){
+	cout << "Test_vector_begin"<<endl;
+	int ary[]={1,2,3,4,5};
+	vector<int> v(5);
+	v.assign(ary,ary+5);
+	//iota(v.begin(), v.end(), 2); //linux不支持iota
+	vector<int>::iterator It =  v.begin();
+	while(It != v.end())
+		cout << *It++ << " ";
+	cout << endl;
+	It = v.begin()+2;
+	cout << *It << endl;
+	return;
+}
 /*
  * back的使用
  */

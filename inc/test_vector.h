@@ -5,12 +5,14 @@
 #include <string>
 #include <algorithm>
 #include <iterator>
+
 class Test_vector{
 	public:
 		void Test_vector_constructors();
 		void Test_vector_assign();
 		void Test_vector_at();
 		void Test_vector_back();
+		void Test_vector_begin();
 };
  /*
   * 创建模板
