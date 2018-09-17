@@ -5,7 +5,7 @@
 #include <string>
 #include <algorithm>
 #include <iterator>
-
+using namespace std;
 class Test_vector{
 	public:
 		void Test_vector_constructors();
@@ -14,6 +14,14 @@ class Test_vector{
 		void Test_vector_back();
 		void Test_vector_begin();
 		void Test_vector_capacity();
+		void Test_vector_clear();
+};
+template <class T>
+class Print{
+	public:
+		void operator()(T& t){
+			cout << t << " ";
+		}
 };
  /*
   * 创建模板

@@ -2,6 +2,28 @@
 //#include <numeric>
 using namespace std;
 /*
+ * clear的使用
+ */
+void Test_vector::Test_vector_clear(){
+	cout << "Test_vector_clear"<<endl;
+	vector<int> v(10);
+	Print<int> print;
+	fill(v.begin(),v.end(),5);
+	cout << "Vector v: ";
+	for_each(v.begin(),v.end(),print);
+	cout << endl;
+	cout << "Size of v = " << v.size() << endl;
+	cout << "v.clear" << endl;
+	v.clear();
+	cout << "Vector v: ";
+	for_each(v.begin(),v.end(),print);
+	cout << endl;
+	cout << "Size of v = " << v.size() << endl;
+	v.empty()?cout << "":cout << "not ";
+	cout << "empty" << endl;
+	return;
+}
+/*
  * capacity的使用
  * size是当前vector容器真实占用的大小，也就是容器当前拥有多少个容器。
  * capacity是指在发生realloc前能允许的最大元素数，即预分配的内存空间。
