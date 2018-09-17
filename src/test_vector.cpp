@@ -2,6 +2,32 @@
 //#include <numeric>
 using namespace std;
 /*
+ * erase的使用
+ * 移除定位到的元素，
+ * 两种使用方法
+ *	   一个参数，移除指定的数据 
+ *     两个参数 由第一个参数到第二个参数（不包含第二个参数）均移除
+ */
+void Test_vector::Test_vector_erase(){
+	cout << "Test_vector_erase"<<endl;
+	vector<int> v(10);
+	vector<int>::iterator It;
+	for(int i = 0;i < 10; i++){
+		v[i] = i + 1;
+	}
+	copy(v.begin(),v.end(),ostream_iterator<int>(cout," "));
+	cout << endl;
+	It = v.begin() + 2;
+	v.erase(It);
+	copy(v.begin(),v.end(),ostream_iterator<int>(cout," "));
+	cout << endl;
+	It = v.begin();
+	v.erase(It,It + 2);
+	copy(v.begin(),v.end(),ostream_iterator<int>(cout," "));
+	cout << endl;
+	return;
+}
+/*
  * end的使用
  */
 void Test_vector::Test_vector_end(){

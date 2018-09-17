@@ -17,6 +17,7 @@ class Test_vector{
 		void Test_vector_clear();
 		void Test_vector_empty();
 		void Test_vector_end();
+		void Test_vector_erase();
 };
 template <class T>
 class Print{
