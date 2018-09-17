@@ -12,7 +12,8 @@ int main(){
 	//test_vector.Test_vector_assign();
 	//test_vector.Test_vector_at();
 	//test_vector.Test_vector_back();
-	test_vector.Test_vector_begin();
+	//test_vector.Test_vector_begin();
+	test_vector.Test_vector_capacity();
 	cout<<"test end"<<endl;
 	return 0;
 }

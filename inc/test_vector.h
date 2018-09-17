@@ -13,6 +13,7 @@ class Test_vector{
 		void Test_vector_at();
 		void Test_vector_back();
 		void Test_vector_begin();
+		void Test_vector_capacity();
 };
  /*
   * 创建模板
