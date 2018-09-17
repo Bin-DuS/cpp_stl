@@ -2,6 +2,23 @@
 //#include <numeric>
 using namespace std;
 /*
+ * end的使用
+ */
+void Test_vector::Test_vector_end(){
+	cout << "Test_vector_end"<<endl;
+	int ary[]={1,2,3,4,5};
+	vector<int> v(5);
+	v.assign(ary,ary+5);
+	//iota(v.begin(), v.end(), 2); //linux不支持iota
+	vector<int>::iterator It =  v.begin();
+	while(It != v.end())
+		cout << *It++ << " ";
+	cout << endl;
+	It = v.end()-2;
+	cout << *It << endl;
+	return;
+}
+/*
  * empty的使用
  */
 void Test_vector::Test_vector_empty(){
