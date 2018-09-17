@@ -2,6 +2,7 @@
 #include <iostream>
 #include "speak.h"
 #include "test_vector.h"
+#include "test_stack_queue.h"
 using namespace std;
 int main(){
 	//cout<<"hello world"<<endl;
@@ -20,7 +21,9 @@ int main(){
 	//test_vector.Test_vector_erase();
 	//test_vector.Test_vector_front();
 	//test_vector.Test_vector_insert();
-	test_vector.Test_vector_max_size();
+	//test_vector.Test_vector_max_size();
+	Test_stack_queue test_stack_queue;
+	test_stack_queue.Test_stack();
 	cout<<"test end"<<endl;
 	return 0;
 }
