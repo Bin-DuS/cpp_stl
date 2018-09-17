@@ -17,7 +17,8 @@ int main(){
 	//test_vector.Test_vector_clear();
 	//test_vector.Test_vector_empty();
 	//test_vector.Test_vector_end();
-	test_vector.Test_vector_erase();
+	//test_vector.Test_vector_erase();
+	test_vector.Test_vector_front();
 	cout<<"test end"<<endl;
 	return 0;
 }

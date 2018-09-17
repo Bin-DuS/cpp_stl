@@ -2,6 +2,24 @@
 //#include <numeric>
 using namespace std;
 /*
+ * front的使用
+ */
+void Test_vector::Test_vector_front(){
+	cout << "Test_vector_front"<<endl;
+	typedef Member<string,double>M;
+	vector<M> v;
+	v.push_back(M("Linda",75000));
+	v.push_back(M("Robert",60000));
+	vector<M>::iterator It = v.begin();
+	cout << "Entire vector:" << endl;
+	while( It != v.end())
+		(It++)->print();
+	cout << endl;
+	cout << "Return from front()" << endl;
+	v.front().print();
+	return;
+}
+/*
  * erase的使用
  * 移除定位到的元素，
  * 两种使用方法
