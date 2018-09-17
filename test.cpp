@@ -24,7 +24,8 @@ int main(){
 	//test_vector.Test_vector_max_size();
 	Test_stack_queue test_stack_queue;
 	//test_stack_queue.Test_stack();
-	test_stack_queue.Test_queue();
+	//test_stack_queue.Test_queue();
+	test_stack_queue.Test_priority_queue();
 	cout<<"test end"<<endl;
 	return 0;
 }

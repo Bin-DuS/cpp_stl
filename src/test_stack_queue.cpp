@@ -1,6 +1,33 @@
 #include "test_stack_queue.h"
 using namespace std;
 /*
+ * priority_queue的使用,优先队列
+ */
+void Test_stack_queue::Test_priority_queue(){
+	cout << "Test_priority_queue"<<endl;
+	priority_queue<int,vector<int>,less<int> > ipq;
+	ipq.push(100);
+	ipq.push(200);
+	ipq.push(300);
+	cout << "size of priority_queue ipq = " << ipq.size() << endl;
+	cout << "ipq<int,vector<int>,less<int> > = " << endl;
+	while(!ipq.empty()){
+		cout << ipq.top() << " ";
+		ipq.pop();
+	}
+	cout << endl;
+	cout << "priority_queue<string,vector<string> > spq;" << endl;
+	priority_queue<string,vector<string> > spq;
+	for(int i = 1; i < 10; i++){
+		spq.push(string(i,'*'));
+	}
+	while(!spq.empty()){
+		cout << spq.top() << endl;
+		spq.pop();
+	}
+	return;
+}
+/*
  * queue的使用,队列
  */
 void Test_stack_queue::Test_queue(){
