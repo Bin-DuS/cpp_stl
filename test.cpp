@@ -10,7 +10,8 @@ int main(){
 	Test_vector test_vector;
 	//test_vector.Test_vector_constructors();
 	//test_vector.Test_vector_assign();
-	test_vector.Test_vector_at();
+	//test_vector.Test_vector_at();
+	test_vector.Test_vector_back();
 	cout<<"test end"<<endl;
 	return 0;
 }

@@ -1,6 +1,29 @@
 #include "test_vector.h"
 using namespace std;
 /*
+ * back的使用
+ */
+template<class T,class D>
+ void Member<T,D>::print(){ //文档中为 void Member::print() 是不正确的
+	 cout << name << " " << sal << endl;
+ }
+void Test_vector::Test_vector_back(){
+	cout << "Test_vector_back"<<endl;
+	typedef Member<string,double>M;
+	vector<M> v;
+	v.push_back(M("Robert",60000));
+	v.push_back(M("Linda",75000));
+	vector<M>::iterator It = v.begin();
+	cout <<"Entire vector: "<<endl;
+	while(It != v.end()){
+		(It++)->print();
+	}
+	cout << endl;
+	cout << "Return from back()" << endl;
+	v.back().print();
+	return;
+}
+/*
  * at的使用
  * at 定位到指定的下标元素，和v[i]类似
  */
