@@ -2,10 +2,10 @@
 //#include <numeric>
 using namespace std;
 /*
- * end的使用
+ * empty的使用
  */
-void Test_vector::Test_vector_end(){
-	cout << "Test_vector_end"<<endl;
+void Test_vector::Test_vector_empty(){
+	cout << "Test_vector_empty"<<endl;
 	vector<int> v;
 	cout << "Vector is ";
 	v.empty() ? cout << "":cout << "not ";
