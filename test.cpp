@@ -3,6 +3,7 @@
 #include "speak.h"
 #include "test_vector.h"
 #include "test_stack_queue.h"
+#include "test_others.h"
 using namespace std;
 int main(){
 	//cout<<"hello world"<<endl;
@@ -22,10 +23,12 @@ int main(){
 	//test_vector.Test_vector_front();
 	//test_vector.Test_vector_insert();
 	//test_vector.Test_vector_max_size();
-	Test_stack_queue test_stack_queue;
+	//Test_stack_queue test_stack_queue;
 	//test_stack_queue.Test_stack();
 	//test_stack_queue.Test_queue();
-	test_stack_queue.Test_priority_queue();
+	//test_stack_queue.Test_priority_queue();
+	Test_others test_others;
+	test_others.Test_others_firends();
 	cout<<"test end"<<endl;
 	return 0;
 }
