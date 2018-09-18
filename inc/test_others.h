@@ -1,10 +1,44 @@
 #ifndef __TEST_OTHERS_H__
 #define __TEST_OTHERS_H__
 #include <iostream>
+#include <string>
+#include <vector>
 using namespace std;
+class Parent{
+	protected:
+		string pname;
+	public:
+		Parent(string name){
+			pname = name;
+		}
+		virtual void printName(){};
+};
+class Child: public Parent{
+	protected:
+		string cname;
+	public:
+		Child(string name):Parent(name){
+			cname = name;
+		}
+		virtual void printName(){
+			cout << "This is child, cname is " << cname << ",pname is " << pname << endl;
+		}
+};
+class GrandChild :public Child{
+	private:
+		string gname;
+	public:
+		GrandChild(string name):Child(name){
+			gname = name;
+		}
+		virtual void printName(){
+			cout << "This is grandchild, gname is " << gname << ", cname is " << cname << ", pname is " << pname << endl;
+		}
+};
 class Test_others{
 	public:
 		void Test_others_firends();
+		void Test_others_inherit();
 };
 class Point{
 	public:

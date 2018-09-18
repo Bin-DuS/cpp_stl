@@ -2,6 +2,25 @@
 #include <math.h>
 using namespace std;
 /*
+ * 继承的使用
+ * C++的子类与孙子类都实现了虚函数时，孙子类的实现会覆盖掉子类的实现。
+ * 继承的最主要的应用就是把不同的类放到一个数组中，然后遍历调用同名函数。
+ */
+void Test_others::Test_others_inherit(){
+	cout << "Test_others_inherit"<<endl;
+	string name = "C";
+	Child child(name);
+	name = "GC";
+	GrandChild gchild(name);
+	vector<Parent*> mlist;
+	mlist.push_back(dynamic_cast<Parent*>(&child));
+	mlist.push_back(dynamic_cast<Parent*>(&gchild));
+	for(int i = 0; i < mlist.size();++i){
+		mlist[i]->printName();
+	}
+	return;
+}
+/*
  * 结合着类的特性和类中一般成员函数，我们可以这样理解：类具有封装和信息隐藏的特性。只有类的成员函数才能访问类的私有
  * 成员，程序中的其他函数是无法访问私有成员的。非成员函数可以访问类中的公有成员，但是如果将数据成员都定义为公有的，
  * 这又破坏了隐藏的特性。另外，应该 看到在某些情况下，特别是在对某些成员函数多次调用时，由于参数传递，类型检查和安

@@ -28,7 +28,8 @@ int main(){
 	//test_stack_queue.Test_queue();
 	//test_stack_queue.Test_priority_queue();
 	Test_others test_others;
-	test_others.Test_others_firends();
+	//test_others.Test_others_firends();//友元
+	test_others.Test_others_inherit();//继承
 	cout<<"test end"<<endl;
 	return 0;
 }
