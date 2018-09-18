@@ -1,6 +1,26 @@
 #include "test_others.h"
+#include <string.h>
 #include <math.h>
 using namespace std;
+/*
+ * slab的使用
+ */
+typedef class data{
+	public:
+		int i;
+		char data[16];
+}data;
+void Test_others::Test_others_slab(){
+	cout << "Test_others_slab"<<endl;
+	gm_slab<data> slab;
+	data *d = slab.alloc();
+	d->i = 1;
+	strcpy(d->data,"hello world");
+	cout << "(d->i):" << d->i << " (d->data):" << d->data << endl; 
+	slab.free(d);
+	cout << "(d->i):" << d->i << " (d->data):" << d->data << endl;
+	return;
+}
 /*
  * 继承的使用
  * C++的子类与孙子类都实现了虚函数时，孙子类的实现会覆盖掉子类的实现。
