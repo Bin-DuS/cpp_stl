@@ -4,6 +4,7 @@
 #include "simple_list.h"
 #include <string>
 #include <vector>
+#include <stack>
 using namespace std;
 template <class T>
 class gm_slab{
@@ -127,6 +128,7 @@ class Test_others{
 		void Test_others_firends();
 		void Test_others_inherit();
 		void Test_others_slab();
+		void Test_others_dijkstra();
 };
 class Point{
 	public:

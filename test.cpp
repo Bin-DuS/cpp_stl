@@ -30,7 +30,8 @@ int main(){
 	Test_others test_others;
 	//test_others.Test_others_firends();//友元
 	//test_others.Test_others_inherit();//继承
-	test_others.Test_others_slab();
+	//test_others.Test_others_slab();
+	test_others.Test_others_dijkstra();
 	cout<<"test end"<<endl;
 	return 0;
 }
