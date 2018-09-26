@@ -1,4 +1,4 @@
-#include "test_stack_queue.h"
+#include "../inc/test_stack_queue.h"
 using namespace std;
 /*
  * priority_queue的使用,优先队列

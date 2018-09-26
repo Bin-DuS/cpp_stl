@@ -1,9 +1,9 @@
 /*main cpp*/
 #include <iostream>
-#include "speak.h"
-#include "test_vector.h"
-#include "test_stack_queue.h"
-#include "test_others.h"
+#include "./inc/speak.h"
+#include "./inc/test_vector.h"
+#include "./inc/test_stack_queue.h"
+#include "./inc/test_others.h"
 using namespace std;
 int main(){
 	//cout<<"hello world"<<endl;

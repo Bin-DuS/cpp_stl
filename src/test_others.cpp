@@ -1,4 +1,4 @@
-#include "test_others.h"
+#include "../inc/test_others.h"
 #include <string.h>
 #include <math.h>
 #define INT_MAX 99999
