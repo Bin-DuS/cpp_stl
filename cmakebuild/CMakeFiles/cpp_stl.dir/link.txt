@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/cpp_stl.dir/test.cpp.o CMakeFiles/cpp_stl.dir/src/speak.cpp.o CMakeFiles/cpp_stl.dir/src/test_vector.cpp.o CMakeFiles/cpp_stl.dir/src/test_stack_queue.cpp.o CMakeFiles/cpp_stl.dir/src/test_others.cpp.o  -o cpp_stl -rdynamic 
